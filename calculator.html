@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            
+            <table>
+                <!-- display -->
+                <tr>
+                <td colspan="5">
+                <div class="display">
+                    <div data-prev-operand class="prev-operand"></div>
+                    <div data-curr-operand class="curr-operand"></div>
+                </div>
+                </td>  
+                </tr> 
+                <!-- numbers and operators button rows -->
+                <!-- buttons row 1-->
+                <tr>
+                    <td><button data-number> 7 </button></td>
+                    <td><button data-number> 8 </button></td>
+                    <td><button data-number> 9 </button></td>
+                    <td><button class="clear" data-delete> DEL </button></td>
+                    <td><button class="clear" data-all-clear> AC </button></td>
+                </tr>
+                <!-- buttons row 2-->
+                <tr>
+                    <td><button data-number> 4 </button></td>
+                    <td><button data-number> 5 </button></td>
+                    <td><button data-number> 6 </button></td>
+                    <td><button class="optr" data-operation> * </button></td>
+                    <td><button class="optr" data-operation> / </button></td>
+                </tr>
+                <!-- buttons row 3-->
+                <tr>
+                    <td><button data-number> 1 </button></td>
+                    <td><button data-number> 2 </button></td>
+                    <td><button data-number> 3 </button></td>
+                    <td><button class="optr" data-operation> + </button></td>
+                    <td><button class="optr" data-operation> - </button></td>
+                </tr>
+                <!-- buttons row 4-->
+                <tr>
+                    <td><button data-number> 0 </button></td>
+                    <td><button data-number> . </button></td>
+                    <td><button class="optr" data-operation> % </button></td>
+                    <td><button class="optr" data-operation> ^</button></td>
+                    <td><button class="equal" data-equals> = </button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<script src="calculator.js"></script>
+</body>
+</html>
