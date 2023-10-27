@@ -60,7 +60,6 @@ class Calculator {
       default:
         return;
     }
-    result=result.toFixed(3);
     this.curr = result; //after performing the operation the result is given to curr to be displayed in curroprnd.innerText
     this.operation = ""; //while displaying the result make the operation undefined
     this.pre = ""; //and clear the pre element in prevoprnd.innerText
